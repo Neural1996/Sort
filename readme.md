@@ -62,7 +62,7 @@
 } 
 ```  
 * 用递归来实现归并排序  
-![图片](https://user-images.githubusercontent.com/88218815/127874947-554c8b62-acc7-4dcf-86c2-e2a459bd190d.png)
+![图片](https://user-images.githubusercontent.com/88218815/127874947-554c8b62-acc7-4dcf-86c2-e2a459bd190d.png)  
 `分而治之的时间复杂度计算方法：先假设 整体复杂度为N，则递归的前一步时间复杂度为N/2`
 * 归并排序是稳定排序 
 * 分配统一的函数接口

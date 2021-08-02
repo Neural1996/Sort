@@ -43,4 +43,21 @@
 >假设有两个已经排好序的子序列，目的将他们有序的放入同一数组中。    
 ![图片](https://user-images.githubusercontent.com/88218815/127796640-5f6381b2-7e55-4013-97ac-0605ac01a46e.png)
 * 每个元素被扫描存储一次，时间复杂度为 N  
-* [代码]()
+* 代码：  
+```
+  void Merge(ElementType A[], ElenmetType TmpA[], int L, int R, int RigehtEnd )  // L=左起始位置，R=右起始位置，RightEnd=右边终点位置
+ {    LeftEnd = R-1;
+      Tmp = L;   //存放结果的数组的起始位置
+      NumElements=RightEnd-L+1;  //总共排序的元素个数
+      while(L<=LeftEnd && R<=RightEnd){
+           if(A[L] <= A[R])     TmpA[Tmp++]=A[L++];
+           else                 TmpA[Tmp++]=A[R++];
+      }
+      while(L<=LeftEnd)
+           TmpA[Tmp++]=A[L++];
+      while(R<=ReftEnd)
+           TmpA[Tmp++]=A[R++];
+      for(i=0; i<NumElements; i++, RightEnd--)     //从后往前将临时数组中排好序的拷贝到数组A中
+           A[RightEnd]=TmpA[RightEnd];
+} 
+```  

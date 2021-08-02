@@ -29,3 +29,13 @@
 希尔排序是插入排序的一种又称“缩小增量排序”（Diminishing Increment Sort），是直接插入排序算法的一种更高效的改进版本。  
 * 定义从大到小的增量间隔 Dm > Dm-1 > ... > D1=1 
 * 当进行小间隔排序后，之前的间隔仍然保持有序 
+## 堆排序
+### 选择排序
+![图片](https://user-images.githubusercontent.com/88218815/127792650-6f33508b-ddd1-44a3-b0ab-7b17829931ca.png)
+* 最小元交换时，两个元素可能相距很远，所以一次可能消掉了很多逆序对
+* 使用最小堆来找到最小元
+### 堆排序 
+利用最大堆，先将队列建成最大堆，然后取出根节点A[0]与最末尾元素交换，再对剩下的N-1个元素进行排序
+![图片](https://user-images.githubusercontent.com/88218815/127794145-c99a8daf-bc1c-4730-8e1e-e2484d90b7b6.png)
+* [代码](https://github.com/Neural1996/Sort/blob/main/%E6%8F%92%E5%85%A5insertion.c)
+

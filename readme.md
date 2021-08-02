@@ -50,7 +50,7 @@
       Tmp = L;   //存放结果的数组的起始位置
       NumElements=RightEnd-L+1;  //总共排序的元素个数
       while(L<=LeftEnd && R<=RightEnd){
-           if(A[L] <= A[R])     TmpA[Tmp++]=A[L++];
+           if(A[L] <= A[R])     TmpA[Tmp++]=A[L++];      //之所以用Tmp是每次都在临时数组的对应段落做操作
            else                 TmpA[Tmp++]=A[R++];
       }
       while(L<=LeftEnd)
@@ -61,3 +61,19 @@
            A[RightEnd]=TmpA[RightEnd];
 } 
 ```  
+* 用递归来实现归并排序  
+![图片](https://user-images.githubusercontent.com/88218815/127874947-554c8b62-acc7-4dcf-86c2-e2a459bd190d.png)
+`分而治之的时间复杂度计算方法：先假设 整体复杂度为N，则递归的前一步时间复杂度为N/2`
+* 归并排序是稳定排序 
+* 分配统一的函数接口
+```
+void Merge_sort(ElementType A[], int N)
+{   ElementType * TmpA;
+    TmpA=malloc(N * sizeof(ElementType)) //申请动态空间，c99直接可以用动态数组
+    if(TmpA != NULL) {      //看能否申请到空间，严谨！
+        MSort(A, TmpA, 0, N-1);   
+        free(TmpA);
+    }
+    else Error("空间不足")；
+ }
+ ```

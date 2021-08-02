@@ -38,4 +38,7 @@
 利用最大堆，先将队列建成最大堆，然后取出根节点A[0]与最末尾元素交换，再对剩下的N-1个元素进行排序  
 ![图片](https://user-images.githubusercontent.com/88218815/127794145-c99a8daf-bc1c-4730-8e1e-e2484d90b7b6.png)
 * [代码](https://github.com/Neural1996/Sort/blob/main/%E5%A0%86%E6%8E%92%E5%BA%8Fheapsort.c)
+## 归并排序
+* 核心： 两个有序子列的归并  
+>假设有两个已经排好序的子序列，目的将他们有序的放入同一数组中。  
 

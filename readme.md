@@ -90,4 +90,6 @@ void Merge_sort(ElementType A[], int N)
 ![图片](https://user-images.githubusercontent.com/88218815/127952503-a22606d3-0119-437f-9809-e02ee67fa955.png)
 ![图片](https://user-images.githubusercontent.com/88218815/127952925-ff7a34cf-8fcb-42d8-930b-5b512bc7c76c.png)
 ![图片](https://user-images.githubusercontent.com/88218815/127952721-a748fb68-733d-4b20-8cb6-1cb238148f93.png)  
-
+* 如果有与主元相等的元素，也依旧交换。  
+>从图中可以看出，每次划分子集后，主元都放入了正确的位置，而且在之后的递归中位置保持不变，所以这种排序的速度更快。而且如果有与主元相等的元素，也依旧交换。  
+>对于快速排序，在数据规模大的时候效率高，在小规模数据排序时可能还不如简单排序快，因此可以在程序中加一个阈值，使得在递归到数据规模充分小时，停止递归，直接调用简单排序。  

@@ -82,3 +82,6 @@ void Merge_sort(ElementType A[], int N)
 * 核心代码：![图片](https://user-images.githubusercontent.com/88218815/127942648-9c3efd44-c963-4d0f-a5a2-187a90d5a1e8.png)  
 * 整理函数接口：![图片](https://user-images.githubusercontent.com/88218815/127943387-9c87d149-9b1a-4c1f-a4b3-8e0154377547.png)
 >归并排序时间复杂度是NlogN，也是稳定的，但是缺点在于无论是否递归，都要有一个临时数组TmpA[],占用内存空间。  
+## 快速排序
+算法概述：![图片](https://user-images.githubusercontent.com/88218815/127948255-2d6353ad-62b1-47da-948d-07051e71a625.png)
+* 选择主元(pivot)：

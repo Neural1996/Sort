@@ -61,7 +61,7 @@
            A[RightEnd]=TmpA[RightEnd];
 } 
 ```  
-* 用递归来实现归并排序  
+### 用递归来实现归并排序  
 ![图片](https://user-images.githubusercontent.com/88218815/127874947-554c8b62-acc7-4dcf-86c2-e2a459bd190d.png)  
 `分而治之的时间复杂度计算方法：先假设 整体复杂度为N，则递归的前一步时间复杂度为N/2`
 * 归并排序是稳定排序 
@@ -77,3 +77,8 @@ void Merge_sort(ElementType A[], int N)
     else Error("空间不足")；
  }
  ```
+### 非递归归并
+![图片](https://user-images.githubusercontent.com/88218815/127942841-9b3e766c-802c-429d-bd00-917e5c2992d1.png)
+* 核心代码：![图片](https://user-images.githubusercontent.com/88218815/127942648-9c3efd44-c963-4d0f-a5a2-187a90d5a1e8.png)  
+* 整理函数接口：![图片](https://user-images.githubusercontent.com/88218815/127943387-9c87d149-9b1a-4c1f-a4b3-8e0154377547.png)
+>归并排序时间复杂度是NlogN，也是稳定的，但是缺点在于无论是否递归，都要有一个临时数组TmpA[],占用内存空间。  

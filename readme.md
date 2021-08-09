@@ -101,6 +101,10 @@ void Merge_sort(ElementType A[], int N)
 * 这里的指针不一定是真正的指针，也可以是数组下标。而且对于指针的则进行最简单的插入排序。
 ![图片](https://user-images.githubusercontent.com/88218815/128653226-20405ba0-b7ca-4681-a68d-e3c443766744.png)  
 ## 桶排序
+![图片](https://user-images.githubusercontent.com/88218815/128656716-60d505ff-c835-41c9-b047-cf5af6a4cbd0.png)  
+count是一个链表数组
+## 基数排序
+![图片](https://user-images.githubusercontent.com/88218815/128657336-47ea15cc-9c4a-43f8-8ac3-a500bbda383e.png)
 
 
  

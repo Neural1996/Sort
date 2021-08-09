@@ -106,6 +106,8 @@ count是一个链表数组
 ## 基数排序
 ![图片](https://user-images.githubusercontent.com/88218815/128657336-47ea15cc-9c4a-43f8-8ac3-a500bbda383e.png)
 
+## 排序方法的比较  
+![图片](https://user-images.githubusercontent.com/88218815/128674151-6a22161a-bb6a-4363-8170-c8a6ae450de7.png)
 
  
 

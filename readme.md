@@ -100,6 +100,7 @@ void Merge_sort(ElementType A[], int N)
 * 算法概述： 又称间接排序，第一一个指针数组作为“表” table。 
 * 这里的指针不一定是真正的指针，也可以是数组下标。而且对于指针的则进行最简单的插入排序。
 ![图片](https://user-images.githubusercontent.com/88218815/128653226-20405ba0-b7ca-4681-a68d-e3c443766744.png)  
+## 桶排序
 
 
  
